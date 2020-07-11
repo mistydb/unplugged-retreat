@@ -97,11 +97,15 @@ textarea {
      flex-flow: row wrap;
    }
 
+   header {
+     padding: 15px 0;
+   }
    header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
    }
 
    header nav {
@@ -109,11 +113,28 @@ textarea {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
+    padding: 20px 0;
+   }
+
+   header .divider {
+     width: 100%;
+   }
+
+   .content-wrapper {
+     width: 90%;
+     padding: 20px 0;
    }
 
    header nav ul {
     display: flex;
     justify-content: space-around;
+    width: 45%;
+   }
+
+   footer .content-wrapper{
+     width: 55%;
+     margin: 50px 0;
    }
 
    footer .social {
@@ -126,6 +147,10 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+   }
+
+   footer p {
+     margin: 0;
    }
 
    /* --------------- Mobile Styles - Homepage --------------- */
@@ -152,14 +177,22 @@ textarea {
     justify-content: center;
     flex-flow: row wrap;
    }
-
-   /* testing
+  
    .features .features-items {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
-    */
+   }
+
+   .features article {
+    width: 55%;
+
+  }
+  
+  .features p {
+    margin: 0;
+  }
 
    /* Reviews */
 
@@ -169,6 +202,9 @@ textarea {
     flex-flow: row wrap;
    }
 
+   .reviews h3 {
+     width: 60%;
+   }
    /* --------------- Mobile Styles - About --------------- */
 
    .mission {

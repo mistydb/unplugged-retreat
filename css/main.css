@@ -87,6 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content-wrapper {
+    width: 90%;
+    padding: 50px 0;
+  }
+
    /* --------------- Base Header - Footer Styles --------------- */
 
    header,
@@ -100,6 +105,7 @@ textarea {
    header {
      padding: 15px 0;
    }
+
    header .content-wrapper {
     display: flex;
     justify-content: center;
@@ -108,17 +114,18 @@ textarea {
     margin: 0;
    }
 
+   .header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
+  }
+
    header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
-   }
-
-   .content-wrapper {
-     width: 90%;
-     padding: 10px 0;
    }
 
    header nav ul {
@@ -140,7 +147,7 @@ textarea {
      margin: 50px 0;
    }
 
-   footer .social {
+   footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -151,7 +158,7 @@ textarea {
     justify-content: center;
     align-items: center;
    }
-   
+
    footer .contact {
      margin-bottom: 50px;
    }
@@ -263,7 +270,7 @@ textarea {
     margin-bottom: 40px;
   }
   
-  .faq-content {
+  .faq article {
     margin-bottom: 50px;
   } 
 
@@ -402,6 +409,8 @@ textarea {
     margin: 0;
   }
 
+  /* Features */
+
   .features article {
     display: flex;
     justify-content: center;
@@ -411,8 +420,10 @@ textarea {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
+
+  /* Reviews */
 
   .reviews article {
     display: flex;
@@ -449,6 +460,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
   }
 
   .mission-content p {
@@ -456,7 +468,7 @@ textarea {
   }
 
   .contact-section .content-wrapper h2 {
-      width: 50%;
+      width: 80%;
   }
 
   .contact-content {
@@ -467,12 +479,16 @@ textarea {
 
   /* FAQ */
 
+  header {
+    padding: 15px 0;
+  }
+
   .faq .content-wrapper {
     justify-content: space-between;
   }
 
-  .faq-content {
-      flex-basis: 40%;
+  .faq article {
+      flex-basis: 45%;
   }
 
   .faq h2 {
@@ -481,7 +497,60 @@ textarea {
 }
 
 @media only screen and (min-width: 1200px) {
-  /*Desktop styles*/
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero Area */
+
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  /* Aside */
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* About Page */
+
+  .mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 95%;
+    }
+
+
+
+  /* FAQ Page */
+
+  .faq h2 {
+    width: 100%;
+}
+
+
+  
 }
 
 /* ==========================================================================

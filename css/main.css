@@ -96,27 +96,40 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: left;
+    color: #e2e3ed;
   }
    
   ul, 
   ol {
     list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25em;
   }
    
   a {
     color: #e2e3ed;
      text-decoration: none;
   }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 3.75em;
+    line-height: 1em;
+  }
    
   h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: 200;
    
   }
    
   h3, 
   h4 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 200;
     margin: 20px 0;
     font-size: 1.125em;
    
@@ -156,6 +169,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #202322;
    }
 
    header {
@@ -238,6 +252,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
    }
    
    /* Features */
@@ -272,6 +287,7 @@ textarea {
    /* Reviews */
 
    .reviews {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -292,6 +308,7 @@ textarea {
      justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
    }
 
    .contact-section {
@@ -299,6 +316,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #2a423a; 
    }
 
    .contact-content p {
@@ -312,6 +330,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
    }
 
    .faq .content-wrapper {
@@ -330,7 +349,31 @@ textarea {
     margin-bottom: 50px;
   } 
 
-
+  aside .form {
+    margin-top: 30px;
+  }
+   
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -437,7 +480,7 @@ textarea {
     justify-content: space-between;
   }
   header nav {
-    width: 20%;
+    width: 25%;
   }
 
   header nav ul {

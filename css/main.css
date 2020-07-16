@@ -108,13 +108,6 @@ textarea {
     color: #e2e3ed;
      text-decoration: none;
   }
-
-  h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 2.25em;
-    line-height: 1.2;
-  }
    
   h2 {
     font-family: 'Poppins', sans-serif;
@@ -137,11 +130,11 @@ textarea {
   }
    
   img {
-   
+    width: 100%;
   }
    
   figure {
-   
+   margin: 0;
   }
    
   address {
@@ -166,6 +159,14 @@ textarea {
 
    header {
      padding: 15px 0;
+   }
+
+   header figure {
+     width: 60%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
    }
 
    header .content-wrapper {
@@ -237,11 +238,26 @@ textarea {
    /* --------------- Mobile Styles - Homepage --------------- */
 
    /* Hero Area */
+
+   .hero-area figure {
+     width: 100%;
+   }
    .hero-area {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-image: url(../img/hero-image.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
    }
+
+   .hero-area  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+    line-height: 1.2;
+  }
 
    /* Aside */
    aside {
@@ -254,11 +270,20 @@ textarea {
    
    /* Features */
 
+   .features figure {
+    width: 100%;
+  }
    .features {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    align-items: center;
+    background-image: url(../img/amenities.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
    }
+  
   
    .features .features-items {
      display: flex;
@@ -289,6 +314,10 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+   }
+
+   .reviews figure {
+     width: 100%;
    }
 
    .reviews h2 {
@@ -469,7 +498,15 @@ textarea {
     margin: 100px 0;
   }
 
-  h1 {
+  header figure {
+    width: 33%;
+  }
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
     font-size: 3em;
     line-height: 1;
     margin: 0;
@@ -546,10 +583,15 @@ textarea {
   .reviews article {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
   }
 
   .reviews h2 {
     width: 85%;
+  }
+
+  .reviews figure {
+    width: 49%;
   }
 
   .reviews article div {
@@ -643,16 +685,16 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
 
-  header {
-    padding: 15px 0;
-  }
-
   .content-wrapper {
     max-width: 960px;
   }
 
-  h1 {
-    font-size: 3.75em;
+  header {
+    padding: 15px 0;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   h2 {
@@ -672,7 +714,8 @@ textarea {
   /* Hero Area */
 
   .hero-area h1 {
-    width: 60%;
+    width: 80%;
+    font-size: 3.75em;
   }
 
   /* Aside */

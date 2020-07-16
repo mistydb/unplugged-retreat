@@ -270,9 +270,7 @@ textarea {
    
    /* Features */
 
-   .features figure {
-    width: 100%;
-  }
+   
    .features {
     display: flex;
     justify-content: center;
@@ -293,6 +291,11 @@ textarea {
      text-align: center;
    }
 
+   .features i {
+    font-size: 3.75em;
+    margin-bottom: 40px;
+  }
+
    .features h2 {
     margin-bottom: 60px;
   }
@@ -305,6 +308,7 @@ textarea {
   
   .features p {
     margin: 0;
+    text-align: center;
   }
 
    /* Reviews */
@@ -585,7 +589,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     flex-basis: 50%;
   }
 

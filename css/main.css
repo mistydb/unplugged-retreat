@@ -527,7 +527,7 @@ textarea {
   }
 
   .hero-area {
-    min-height: 600px;
+    min-height: 580px;
   }
 
   .hero-area h1 {
@@ -748,6 +748,7 @@ textarea {
   .hero-area h1 {
     width: 80%;
     font-size: 3.75em;
+    min-height: 600px;
   }
 
   /* Aside */
@@ -793,7 +794,7 @@ textarea {
 
   .mission h2,
     .contact-section .content-wrapper h2 {
-        width: 95%;
+        width: 100%;
         font-size: 3em;
     }
 

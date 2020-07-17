@@ -225,6 +225,11 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #527158;
+    border: none;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
    }
 
    footer .contact {
@@ -645,6 +650,10 @@ textarea {
   footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
+  }
+
+  footer .social-icons p {
+    margin: 0 20px;
   }
 
   footer p {
